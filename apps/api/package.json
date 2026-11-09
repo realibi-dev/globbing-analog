@@ -1,0 +1,22 @@
+{
+  "name": "@globbing/api",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist .turbo"
+  },
+  "dependencies": {
+    "@globbing/types": "workspace:*",
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@globbing/config": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

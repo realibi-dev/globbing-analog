@@ -1,0 +1,31 @@
+{
+  "name": "globbing-analog",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev --filter=!@globbing/mobile",
+    "dev:web": "pnpm --filter @globbing/web dev",
+    "dev:admin": "pnpm --filter @globbing/admin dev",
+    "dev:api": "pnpm --filter @globbing/api dev",
+    "dev:frontend": "turbo dev --filter=@globbing/web --filter=@globbing/admin",
+    "dev:all": "turbo dev",
+    "build": "turbo build --filter=!@globbing/mobile",
+    "build:web": "pnpm --filter @globbing/web build",
+    "build:admin": "pnpm --filter @globbing/admin build",
+    "build:api": "pnpm --filter @globbing/api build",
+    "build:all": "turbo build",
+    "lint": "turbo lint --filter=!@globbing/mobile",
+    "type-check": "turbo type-check --filter=!@globbing/mobile",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\" --ignore-path .gitignore",
+    "clean": "turbo clean && rimraf node_modules"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "turbo": "^2.3.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  }
+}

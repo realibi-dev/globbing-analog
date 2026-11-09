@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@globbing/web", "dev"],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "admin",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@globbing/admin", "dev"],
+      "port": 3001,
+      "autoPort": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "app": {
+    "name": "Globbing"
+  },
+  "nav": {
+    "packages": "Мои посылки",
+    "buyForMe": "Купи вместо меня",
+    "pickupPoints": "Пункты выдачи",
+    "profile": "Профиль",
+    "logout": "Выйти"
+  },
+  "common": {
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "back": "Назад",
+    "loading": "Загрузка..."
+  }
+}
